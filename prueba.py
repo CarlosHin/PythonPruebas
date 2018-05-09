@@ -20,3 +20,6 @@ listaNotas = pd.Series(dic)
 """
 print("Notas: ",end="\n")
 print(listaNotas)
+
+holii
+holii holii holiiuu holiiu
