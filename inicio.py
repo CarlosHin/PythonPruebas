@@ -8,6 +8,8 @@ def imprimirUsuarios():
 
 conn =sqlite3.connect("Tabla de usuarios")
 c = conn.cursor()
+#c.execute('''drop table usuarios''')
+
 try:
     c.execute('''create table usuarios (nombre text,apellido text)''')
 except Exception:
@@ -21,6 +23,5 @@ c.execute('''insert into usuarios values('{nombre}', '{apellido}')'''.format(**l
 
 
 imprimirUsuarios()
-#c.execute('''drop table usuarios''')
 c.close
 conn.commit();
